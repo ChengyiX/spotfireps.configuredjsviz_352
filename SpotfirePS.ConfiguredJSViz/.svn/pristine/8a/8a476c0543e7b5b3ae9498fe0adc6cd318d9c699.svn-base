@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<module>
+  <id>0823406c-8900-4fea-931f-93cdf705f0c5</id>
+  <name>SpotfirePS.ConfiguredJSViz</name>
+  <version>1.0.0.0</version>
+  <intendedClient>Core</intendedClient>
+  <assemblies>
+    <assembly>
+      <fullname>SpotfirePS.ConfiguredJSViz, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fc56967fa6cb21bc</fullname>
+      <codebase>SpotfirePS.ConfiguredJSViz.dll</codebase>
+      <compatibility>
+        <min-version>0.0.0.0</min-version>
+        <max-version>#.#.*.*</max-version>
+      </compatibility>
+    </assembly>
+  </assemblies>
+  <extensions>
+    <addIn fullTypeName="SpotfirePS.ConfiguredJSViz.ConfiguredVisualizationAddIn, SpotfirePS.ConfiguredJSViz, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fc56967fa6cb21bc" />
+  </extensions>
+</module>

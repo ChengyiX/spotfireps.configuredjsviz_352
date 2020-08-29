@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pbp:PackageBuilderProject SchemaVersion="1.1" Id="d37230c3-1592-44d5-8c6c-0cfd85c3dc70" Name="SpotfirePS.ConfiguredJSViz" Version="1.0.0.0" IntendedClient="Core" xmlns:pbp="http://spotfire.tibco.com/PackageBuilderProject.xsd">
+  <pbp:ModuleFile RelativePath="module.xml" UpdateAutomatically="true" />
+  <pbp:BuildFolder RelativePath="bin\Debug" />
+  <pbp:Files>
+    <pbp:File RelativePath="DocumentFormat.OpenXml.dll" Included="false" ExtensionAssembly="true" />
+    <pbp:File RelativePath="DocumentFormat.OpenXml.xml" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="Newtonsoft.Json.dll" Included="false" ExtensionAssembly="true" />
+    <pbp:File RelativePath="Newtonsoft.Json.pdb" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="Newtonsoft.Json.xml" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="Spotfire.Dxp.Application.dll" Included="false" ExtensionAssembly="true" />
+    <pbp:File RelativePath="Spotfire.Dxp.Application.xml" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="Spotfire.Dxp.Data.dll" Included="false" ExtensionAssembly="true" />
+    <pbp:File RelativePath="Spotfire.Dxp.Data.Formats.Sbdf.dll" Included="false" ExtensionAssembly="true" />
+    <pbp:File RelativePath="Spotfire.Dxp.Data.Formats.Sbdf.xml" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="Spotfire.Dxp.Data.Formats.Stdf.dll" Included="false" ExtensionAssembly="true" />
+    <pbp:File RelativePath="Spotfire.Dxp.Data.Formats.Stdf.xml" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="Spotfire.Dxp.Data.xml" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="Spotfire.Dxp.Framework.dll" Included="false" ExtensionAssembly="true" />
+    <pbp:File RelativePath="Spotfire.Dxp.Framework.xml" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="Spotfire.Dxp.Internal.dll" Included="false" ExtensionAssembly="true" />
+    <pbp:File RelativePath="Spotfire.Dxp.Services.dll" Included="false" ExtensionAssembly="true" />
+    <pbp:File RelativePath="SpotfirePS.ConfiguredJSViz.pdb" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="SpotfirePS.Framework.JSVisualization.dll" Included="false" ExtensionAssembly="true" />
+    <pbp:File RelativePath="SpotfirePS.Framework.JSVisualization.pdb" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="SpotfirePS.Framework.JSVisualization.xml" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="SpotfirePS.LoggingUtil.dll" Included="false" ExtensionAssembly="true" />
+    <pbp:File RelativePath="SpotfirePS.LoggingUtil.pdb" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="module.xml" Included="true" ExtensionAssembly="false" />
+    <pbp:File RelativePath="SpotfirePS.ConfiguredJSViz.dll" Included="true" ExtensionAssembly="true" />
+  </pbp:Files>
+</pbp:PackageBuilderProject>

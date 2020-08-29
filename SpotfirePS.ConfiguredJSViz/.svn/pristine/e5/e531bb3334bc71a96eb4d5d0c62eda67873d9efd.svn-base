@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A3006C1-0F96-47C5-A0C3-914121C269E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpotfirePS.ConfiguredJSViz</RootNamespace>
+    <AssemblyName>SpotfirePS.ConfiguredJSViz</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>SpotfirePS.ConfiguredJSViz.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Spotfire.Dxp.Application">
+      <HintPath>..\..\..\..\SDK\TIB_sfire_dev_7.5.0_win\SDK\Binaries\Spotfire.Dxp.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="Spotfire.Dxp.Data">
+      <HintPath>..\..\..\..\SDK\TIB_sfire_dev_7.5.0_win\SDK\Binaries\Spotfire.Dxp.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Spotfire.Dxp.Framework">
+      <HintPath>..\..\..\..\SDK\TIB_sfire_dev_7.5.0_win\SDK\Binaries\Spotfire.Dxp.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="SpotfirePS.Framework.JSVisualization, Version=3.4.0.5, Culture=neutral, PublicKeyToken=4d233badaf236513, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Temp\10_4\TIBCO Spotfire Analyst Portable\Modules\JSViz Core Package_3.5.2.0\SpotfirePS.Framework.JSVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfiguredVisualizationAddIn.cs" />
+    <Compile Include="ConfiguredVisualizationFactory.cs" />
+    <Compile Include="ConfiguredVisualizationTypeIdentifier.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SpotfirePS.ConfiguredJSViz.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scripts\d3.v3.min.js" />
+    <EmbeddedResource Include="scripts\DoughnutChart.js" />
+    <EmbeddedResource Include="scripts\jQuery.js" />
+    <EmbeddedResource Include="scripts\JSViz.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doughnut.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
